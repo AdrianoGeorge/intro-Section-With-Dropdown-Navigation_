@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fw-bold">
+    <a href="#" class="navbar-brand"><b>SNAP</b></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
+      <div class="navbar-nav">
+        <div class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Features</a>
+
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Todo List</a>
+            <a href="#" class="dropdown-item">Calendar</a>
+            <a href="#" class="dropdown-item">Reminders</a>
+            <a href="#" class="dropdown-item">Planning</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Company</a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">History</a>
+            <a href="#" class="dropdown-item">Our Team</a>
+            <a href="#" class="dropdown-item">Blog</a>
+
+          </div>
+        </div>
+        <a href="#" class="nav-item nav-link ">Careers</a>
+        <a href="#" class="nav-item nav-link">About</a>
+
+      </div>
+
+
+      <div class="navbar-nav action-buttons ml-auto  ">
+        <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle me-3">Login</a>
+        <div class="dropdown-menu login-form">
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="form-group">
+              <label>Username</label>
+              <input type="text" class="form-control" required="required">
+            </div>
+            <div class="form-group">
+              <div class="clearfix">
+                <label>Password</label>
+                <a href="#" class="float-right text-muted"><small>Forgot?</small></a>
+              </div>
+              <input type="password" class="form-control" required="required">
+            </div>
+            <input type="submit" class="btn btn-primary btn-block" value="Login">
+          </form>
+        </div>
+        <a href="#" class="btn btn-outline-dark btn-md rounded-top fw-bold">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main image & intro text -->
+  <section id="intro">
+    <div class="container-lg">
+      <div class="row g-4 justify-content-center align-items-center ">
+        <div class="col-md-7  text-md-start ">
+          <h1>
+            <div class="display-5 fw-bold">Make</div>
+            <div class="display-5 fw-bold">Remote work</div>
+          </h1>
+          <p class="lead my-4 text-muted w-75  fs-6 lh-sm">
+            Get your team in sync,no m matter your location. <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, non ipsam. Aspernatur, est.
+          </p>
+
+          <buton class="btn btn-outline-secondary btn-lg">Learn more</buton>
+
+          <div class="sponsors mt-5 ">
+            <img src="./images/client-audiophile.svg" alt="">
+            <img src="./images/client-audiophile.svg" alt="">
+            <img src="./images/client-audiophile.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-5 text-center  d-md-block">
+          <img src="./images/image-hero-desktop.png" class="img-fluid" alt="ebook" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
